@@ -1,36 +1,21 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+### Structure:
 
-## Getting Started
+According to the design I understand that it’s a single page portfolio type website. So, even though there is multiple components and link options but those will basically scroll down the viewer to specific sections.
 
-First, run the development server:
+### Sections:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+**Hero** → In hero section for the background gradient. I used png image from figma design. For the Heading text I made a custom component named CustomText which takes the content, word which will have special background, a break-point and position. However, I haven’t used that everywhere. For, Button I have created 2 custom component one NavigationButton & Button but with the Button many of buttons work is not clear so I haven't used them in all places.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**Skills** → In this section based on button click whether it is right or left button is clicked skills card will keep moving in and out of the view basically a slider. Once every item of a side is viewed it will reset from the beginning.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+**About** → Mentionable work here is the Brick Falling for that I made it generate random brick every 0.5ms but it will always keep 10 brick and the falling is completely randomized. In the granted width bricks will be falling in random order.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+**WorkProcess** → Nothing special here. In case of animation I used rotated it based on hover alongwith changed the color.
 
-## Learn More
+**Contact** → Same, nothing special here.
 
-To learn more about Next.js, take a look at the following resources:
+**Footer** → Simple, mostly flex box.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Component:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Button, CustomText, FallingBricks, NavigationButton.

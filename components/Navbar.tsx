@@ -5,10 +5,10 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import { Button } from "./Button";
 
 const navItems = [
-  { label: "Home", href: "#home" },
+  { label: "Home", href: "#hero" },
   { label: "About", href: "#about" },
   { label: "Portfolio", href: "#portfolio" },
-  { label: "Blog", href: "#blog" },
+  { label: "Blog", href: "#myWorkProcess" },
 ];
 
 export const Navbar = () => {
