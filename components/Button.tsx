@@ -4,7 +4,9 @@ import { FaArrowRightLong } from "react-icons/fa6";
 
 interface ButtonProps {
   text?: string;
-  onClick?: () => void;
+  onClick?: (
+    e: React.MouseEvent<HTMLButtonElement | HTMLAnchorElement>
+  ) => void;
   className?: string;
   href?: string;
   type?: "button" | "submit" | "reset";

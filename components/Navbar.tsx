@@ -24,7 +24,7 @@ export const Navbar = () => {
   }, []);
 
   const handleScroll = (
-    e: React.MouseEvent<HTMLAnchorElement, MouseEvent>,
+    e: React.MouseEvent<HTMLAnchorElement | HTMLButtonElement>,
     id: string
   ) => {
     e.preventDefault();
@@ -81,7 +81,7 @@ export const Navbar = () => {
             ))}
           </div>
 
-          <Button onClick={(e: any) => handleScroll(e, "#contact")} />
+          <Button onClick={(e) => handleScroll(e, "#contact")} />
         </nav>
       </div>
 
@@ -138,7 +138,7 @@ export const Navbar = () => {
             <Button
               text="Start Project"
               href="#contact"
-              onClick={(e: any) => {
+              onClick={(e) => {
                 handleScroll(e, "#contact");
                 setIsOpen(false);
               }}
